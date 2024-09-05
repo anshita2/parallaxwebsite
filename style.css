@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    overflow-x:hidden;
+    height:100vh;
+    perspective:10px;
+}
+
+.container{
+    display:flex;
+    position:relative;
+    height: 100%;
+    transform-style:preserve-3d; 
+    /*The transform-style CSS property sets 
+    whether children of an element are positioned in the 3D space */
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+
+.background , .foreground{
+    height:100%;
+    width:100%;
+    position:absolute;
+    z-index:-1;
+    object-fit:cover;
+}
+
+h1{
+    position: absolute;
+    top:5rem;
+    font-size:8rem;
+    letter-spacing:4px;
+    color:white;
+    text-shadow:0 0 10px rgba(0,0,0,0.3);
+}
