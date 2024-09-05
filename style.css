@@ -46,3 +46,55 @@ h1{
     color:white;
     text-shadow:0 0 10px rgba(0,0,0,0.3);
 }
+section{
+    background-color: rgb(45,45,45);
+    color:white;
+    padding:3rem 0;
+    position: relative;
+}
+
+.bg1{
+    background-image: url(sport-1.jpg);
+}
+.bg2{
+    background-image: url(sport-2.jpg);
+}
+.bg3{
+    background-image: url(sport-3.jpg);
+}
+
+.secheading{
+    font-size:4rem;
+    padding:0 10rem;
+    text-align: center;
+}
+
+.text{
+    font-size:1.3rem;
+    padding: 0 6rem;
+    margin: 2rem 0;
+}
+
+.bg{
+display: flex;
+position: relative;
+justify-content: center;
+align-items: center;
+height: 350px;
+width: 100%;
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+}
+
+.sport{ 
+    position: absolute;
+    height: min-content;
+    width:min-content;
+    white-space: nowrap;  
+    color: black;
+    font-size:2.5rem;
+    font-weight:600;
+    padding:2px 6px;
+    background-color: rgb(248, 241, 233);
+}
